@@ -1,0 +1,108 @@
+:root {
+    --primary-color: #2563eb;
+    --secondary-color: #1e40af;
+    --background-color: #f8fafc;
+    --text-color: #1e293b;
+    --success-color: #16a34a;
+    --warning-color: #f59e0b;
+    --danger-color: #dc2626;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Inter', sans-serif;
+}
+
+ul.todo-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.todo-list li {
+    background: white;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+    min-width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul.todo-list li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-danger.btn-sm {
+    padding: 0.375rem 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    border-radius: 6px;
+    margin-left: 0.5rem;
+    background-color: var(--danger-color);
+    border: none;
+    transition: all 0.2s ease;
+}
+
+.btn-danger.btn-sm:hover {
+    background-color: #b91c1c;
+    transform: scale(1.05);
+}
+
+.done .btn-danger,
+.other-columns .btn-danger {
+    display: inline-block;
+    visibility: hidden;
+}
+
+.done .btn-danger {
+    visibility: visible;
+}
+
+.navbar {
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.navbar-brand img {
+    max-height: 80px;
+    width: auto;
+    margin-right: 12px;
+}
+
+.navbar-nav .nav-link {
+    color: var(--text-color);
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.container-fluid {
+    padding: 2rem;
+}
+
+h3.text-center {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
